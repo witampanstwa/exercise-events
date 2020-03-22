@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    font-family: Roboto, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    height: 33vh;
+    width: 20vw;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5vh 0;
+}

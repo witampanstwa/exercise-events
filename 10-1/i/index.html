@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>10.1 I</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="wrapper">
+    <form>
+        <fieldset>
+            <legend>Dlugość pierwsza</legend>
+            <input type="number" id="length_a" autocomplete="off">
+        </fieldset>
+        <fieldset>
+            <legend>Dlugość druga</legend>
+            <input type="number" id="length_b" autocomplete="off">
+        </fieldset>
+        <button type="button" onclick="processArea(); return false;">Oblicz pole</button>
+        <button type="button" onclick="processPerim(); return false;">Oblicz obwód</button>
+    </form>
+    <div class="results">
+        <div id="area"></div>
+        <div id="perim"></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
