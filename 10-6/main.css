@@ -14,16 +14,22 @@ body {
 }
 
 .gallery > img {
-    height: 33vh;
+    height: 25vh;
     width: 20vw;
     box-sizing: border-box;
     object-fit: cover;
+    flex-basis: calc(60% / 2);
+}
+
+.gallery > img:hover {
+    border: 1vh solid lightgreen;
 }
 
 .gallery {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 5vh 0;
 }
 
