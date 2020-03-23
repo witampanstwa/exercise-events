@@ -3,13 +3,13 @@ const fullImages = document.querySelectorAll('.output > img');
 const attributions = document.querySelectorAll('.output > span');
 const allOutputElements = document.querySelectorAll('.output *');
 
-function showCorrespondingAttrib() {
-    for (const attrib of attributions) if (attrib.id.includes(this.id))
+function showCorrespondingAttrib(e) {
+    for (const attrib of attributions) if (attrib.id.includes(e.target.id))
         attrib.style.display = 'initial';
 }
 
-function showCorrespondingImageAndAttrib() {
-    showCorrespondingAttrib();
+function showCorrespondingImageAndAttrib(e) {
+    showCorrespondingAttrib(e);
 }
 
 function resetView() {
