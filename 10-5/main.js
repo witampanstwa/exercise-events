@@ -4,15 +4,12 @@ const attributions = document.querySelectorAll('.output > span');
 const allOutputElements = document.querySelectorAll('.output *');
 
 function showCorrespondingAttrib(e) {
-    if (e.type === 'mouseover') {
-        resetView(e);
-    }
-
     function isAnyVisible(attribs) {
         for (const attrib of attribs) if (attrib.style.display !== '') return true;
         return false;
     }
 
+    if (e.type === 'mouseover') resetView(e);
     if (!isAnyVisible(attributions)) {
         for (const attrib of attributions) if (attrib.id.includes(e.target.id))
             attrib.style.display = 'initial';
@@ -34,7 +31,6 @@ function resetView(e) {
 
     if (!isAnyVisible(fullImages) || e.type !== 'mouseout') {
         for (const element of allOutputElements) element.style.display = '';
-        console.log('none are visible, clearing');
     }
 }
 
