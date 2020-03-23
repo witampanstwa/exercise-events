@@ -9,18 +9,22 @@ function showCorrespondingAttrib(e) {
 }
 
 function showCorrespondingImageAndAttrib(e) {
+    resetView();
+    for (const fullImage of fullImages) if (fullImage.id.includes(e.target.id))
+        fullImage.style.display = 'initial';
     showCorrespondingAttrib(e);
 }
 
 function resetView() {
-    function areNoneVisible(images) {
-        for (const image of images) if (image.style.display !== '') return false;
+    function isAnyVisible(images) {
+        for (const image of images) if (image.style.display !== '') return true;
 
-        return true;
+        return false;
     }
 
-    if (areNoneVisible(fullImages)) {
+    if (!isAnyVisible(fullImages)) {
         for (const element of allOutputElements) element.style.display = '';
+        console.log('none are visible, clearing');
     }
 }
 
