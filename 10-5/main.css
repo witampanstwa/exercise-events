@@ -9,7 +9,7 @@ body {
     margin-right: auto;
 }
 
-img {
+.gallery > img {
     height: 33vh;
     width: 20vw;
     box-sizing: border-box;
@@ -21,4 +21,12 @@ img {
     width: 100%;
     justify-content: space-evenly;
     padding: 5vh 0;
+}
+
+.output > * {
+    display: none;
+}
+
+.output img {
+    width: 100%;
 }
