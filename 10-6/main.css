@@ -45,6 +45,15 @@ body {
     height: 56vh;
 }
 
+span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    height: 56vh;
+    word-wrap: break-word;
+}
+
 a {
     color: black;
+    word-wrap: break-word;
 }
