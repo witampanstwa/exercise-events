@@ -2,23 +2,58 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>10.5</title>
+    <title>10.6</title>
     <link type="text/css" rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="wrapper">
-    <img src="images/1.png" alt="sunset">
-    <img src="images/2.png" alt="mountains">
-    <img src="images/3.png" alt="forest">
-    <img src="images/4.png" alt="river">
-    <img src="images/5.png" alt="birds">
-    <img src="images/6.png" alt="bushes">
-    Image by <a href="https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4887911">Gordon Johnson</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4887911">Pixabay</a>
-    Image by <a href="https://pixabay.com/users/bowl_of_nicole-1260429/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4363073">Nicole Turner</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4363073">Pixabay</a>
-    Image by <a href="https://pixabay.com/users/Chakkree_Chantakad-15107399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4823516">Chakkree Chantakad</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4823516">Pixabay</a>
-    Image by <a href="https://pixabay.com/users/Chakkree_Chantakad-15107399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4821583">Chakkree Chantakad</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4821583">Pixabay</a>
-    Image by <a href="https://pixabay.com/users/moinzon-2433302/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1412683">Michi S</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1412683">Pixabay</a>
-    Image by <a href="https://pixabay.com/users/Chakkree_Chantakad-15107399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4824761">Chakkree Chantakad</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4824761">Pixabay</a>
+    <div class="gallery">
+        <img id="sunset" src="images/1.png" alt="sunset">
+        <img id="mountains" src="images/2.png" alt="mountains">
+        <img id="forest" src="images/3.png" alt="forest">
+        <img id="river" src="images/4.png" alt="river">
+        <img id="birds" src="images/5.png" alt="birds">
+        <img id="bushes" src="images/6.png" alt="bushes">
+    </div>
+
+    <div class="output">
+        <img id="sunset_full" src="images/1.png" alt="sunset">
+        <img id="mountains_full" src="images/2.png" alt="mountains">
+        <img id="forest_full" src="images/3.png" alt="forest">
+        <img id="river_full" src="images/4.png" alt="river">
+        <img id="birds_full" src="images/5.png" alt="river">
+        <img id="bushes_full" src="images/6.png" alt="river">
+        <span id="attrib_sunset">
+                Obraz autorstwa <a
+                href="https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4887911">Gordon Johnson</a>; <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4887911">Pixabay</a>
+        </span>
+        <span id="attrib_mountains">
+                Obraz autorstwa <a
+                href="https://pixabay.com/users/bowl_of_nicole-1260429/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4363073">Nicole Turner</a>; <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4363073">Pixabay</a>
+        </span>
+        <span id="attrib_forest">
+                Obraz autorstwa <a
+                href="https://pixabay.com/users/Chakkree_Chantakad-15107399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4823516">Chakkree Chantakad</a>; <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4823516">Pixabay</a>
+        </span>
+        <span id="attrib_river">
+                Obraz autorstwa <a
+                href="https://pixabay.com/users/Chakkree_Chantakad-15107399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4821583">Chakkree Chantakad</a>; <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4821583">Pixabay</a>
+        </span>
+        <span id="attrib_birds">
+                Obraz autorstwa <a
+                href="https://pixabay.com/users/moinzon-2433302/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1412683">Michi S</a>; <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1412683">Pixabay</a>
+        </span>
+        <span id="attrib_bushes">
+                Obraz autorstwa <a
+                href="https://pixabay.com/users/Chakkree_Chantakad-15107399/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4824761">Chakkree Chantakad</a>; <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4824761">Pixabay</a>
+        </span>
+    </div>
 </div>
 
 <script src="main.js"></script>

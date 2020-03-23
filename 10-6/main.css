@@ -1,45 +1,46 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
     font-family: Roboto, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px;
 }
 
-form {
-    margin: 1em;
+.gallery > img {
+    height: 33vh;
+    width: 20vw;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
-form > * {
-    margin-bottom: 16px;
+.gallery {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5vh 0;
 }
 
-input {
-    border: none;
-    outline: none;
-    font-size: 16px;
+.output {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.output > * {
+    display: none;
+}
+
+.output img {
     width: 100%;
 }
 
-legend {
-    color: grey;
-    font-size: smaller;
-}
-
-fieldset {
-    border: 1px solid grey;
-    border-radius: 7px;
-}
-
-button {
-    font-family: monospace;
-    color: grey;
-    width: 49%;
-    padding: .5em;
-    border: 1px solid grey;
-    border-radius: 7px;
-    background-color: transparent;
-}
-
-.results {
-    text-align: center;
+a {
+    color: black;
 }
