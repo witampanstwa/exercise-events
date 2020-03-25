@@ -43,11 +43,12 @@ body {
 
 .output img {
     height: 56vh;
+    margin: 0 .33rem;
 }
 
 span {
     writing-mode: vertical-rl;
-    text-orientation: upright;
+    transform: rotate(180deg);
     text-align: center;
     height: 56vh;
     word-wrap: break-word;
